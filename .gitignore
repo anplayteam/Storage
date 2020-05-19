@@ -1,0 +1,11 @@
+#Video Files
+*.mp4
+*.avi
+*.mkv
+#Images
+*.jpg
+*.jpeg
+*.png
+*.gif
+#Encoder Software
+*/ffmpeg

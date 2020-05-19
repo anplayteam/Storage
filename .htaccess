@@ -1,0 +1,5 @@
+RewriteEngine On
+DirectoryIndex index.php
+Options -Indexes
+RewriteRule ^(.+)$ index.php?file=$1 [QSA,L]
+RewriteRule \.(gif|jpg|png|mp4|mkv|avi)$ - [L,F]
