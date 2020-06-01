@@ -30,7 +30,7 @@ class videoProcessor
 			$vo_name = "V".$randname."-".$qname.".mp4";
 			$vo_output = $this->setting['directory'].'/'.$vo_name;
 			//Create video
-			system($this->setting["library"]." -i $video $command $vo_output");
+			system($this->setting["library"]." -i '$video' $command $vo_output");
 			$this->result["status"]="success";
 			$this->result[$qname]=$vo_name;
 		}
